@@ -91,6 +91,14 @@ public:
 	}
 };
 
+class Barbus_new_new : public fish
+{
+public:
+	std::string Name() const override {
+		return "I'm Seaweed";
+	}
+};
+
 class Eurasian_carp : public fish
 {
 public:
