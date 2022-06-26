@@ -10,7 +10,7 @@ namespace Marine_Organisms {
 	int Counter_Individual{ 0 };
 }
 
-//Посетитель
+//ГЏГ®Г±ГҐГІГЁГІГҐГ«Гј
 class Visitor
 {
 public:
@@ -19,7 +19,7 @@ public:
 	virtual void VisitSeaweed(const seaweed* elem) const = 0;
 };
 
-//Аквариум
+//ГЂГЄГўГ Г°ГЁГіГ¬
 class marine_organisms
 {
 public:
@@ -27,7 +27,7 @@ public:
 	virtual void Accept(Visitor* visitor) const = 0;
 };
 
-//Класс рыб
+//ГЉГ«Г Г±Г± Г°Г»ГЎ
 class fish : public marine_organisms
 {
 public:
@@ -43,7 +43,7 @@ public:
 	}
 };
 
-//Класс моллюсков
+//ГЉГ«Г Г±Г± Г¬Г®Г«Г«ГѕГ±ГЄГ®Гў
 class shellfish : public marine_organisms
 {
 public:
@@ -59,7 +59,7 @@ public:
 	}
 };
 
-//Класс водорослей
+//ГЉГ«Г Г±Г± ГўГ®Г¤Г®Г°Г®Г±Г«ГҐГ©
 class seaweed : public marine_organisms
 {
 public:
@@ -74,7 +74,7 @@ public:
 	}
 };
 
-//Конкретные рыбы
+//ГЉГ®Г­ГЄГ°ГҐГІГ­Г»ГҐ Г°Г»ГЎГ»
 class Barbus : public fish
 {
 public:
@@ -91,6 +91,7 @@ public:
 	}
 };
 
+//loser
 class Barbus_new_new : public fish
 {
 public:
@@ -115,7 +116,7 @@ public:
 	}
 };
 
-//Конкретные моллюски
+//ГЉГ®Г­ГЄГ°ГҐГІГ­Г»ГҐ Г¬Г®Г«Г«ГѕГ±ГЄГЁ
 class Gaint_Snail : public shellfish
 {
 public:
@@ -132,7 +133,7 @@ public:
 	}
 };
 
-//Конкретные водоросли
+//ГЉГ®Г­ГЄГ°ГҐГІГ­Г»ГҐ ГўГ®Г¤Г®Г°Г®Г±Г«ГЁ
 class Pandorina : public seaweed
 {
 public:
@@ -149,7 +150,7 @@ public:
 	}
 };
 
-//Конкретные посетители
+//ГЉГ®Г­ГЄГ°ГҐГІГ­Г»ГҐ ГЇГ®Г±ГҐГІГЁГІГҐГ«ГЁ
 class Name_Visitor : public Visitor
 {
 public:
@@ -178,7 +179,7 @@ public:
 	}
 };
 
-//Конкретный визитор к конкретному аквариуму
+//ГЉГ®Г­ГЄГ°ГҐГІГ­Г»Г© ГўГЁГ§ГЁГІГ®Г° ГЄ ГЄГ®Г­ГЄГ°ГҐГІГ­Г®Г¬Гі Г ГЄГўГ Г°ГЁГіГ¬Гі
 void Code(std::vector<const marine_organisms*> organisms, Visitor* visitor)
 {
 	for (const marine_organisms* organism : organisms) {
